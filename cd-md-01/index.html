@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-display">
+                <div class="nav__box">
+                    <div class="nav__box-menu">
+                        <div class="menu-icon"></div>
+                        <div class="nav__box-menu-list font-size-18px">
+                            <div class="menu-delete"></div>
+                            <div class="nav__box-menu-list-link" onClick="document.getElementById('header').scrollIntoView()">Главная</div>
+                            <div class="nav__box-menu-list-link" onClick="document.getElementById('about-theatre').scrollIntoView()">о театре</div>
+                            <div class="nav__box-menu-list-link" onClick="document.getElementById('project').scrollIntoView()">Наши постановки</div>
+                            <div class="nav__box-menu-list-link" onClick="document.getElementById('partners').scrollIntoView()">партнеры театра</div>
+                            <div class="nav__box-menu-list-link" onClick="document.getElementById('contacts').scrollIntoView()">контакты</div>
+                        </div>
+                        <div class="nav__box-menu-contact">
+                            <div class="nav__box-menu-contact-item">+7 495 123-45-67</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header__content" id="header">
+            <div class="header__content-box">
+                <div class="header__content-box-items">
+                    <div class="header__content-box-items-text font-size-px18"><p class="header__content-box-items-text-p">контактная информация</p></div>
+                    <div class="header__content-box-items-line"></div>
+                    <div class="header__content-box-items-icon">
+                        <div class="icon" id="icon-window">
+                            <div class="icon-item icon-item-instagram icon-active"></div>
+                            <div class="icon-item icon-item-facebook"></div>
+                            <div class="icon-item icon-item-vk"></div>
+                            <div class="icon-item icon-item-youtube"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__box">
+                <div class="header__box-height">
+                    <div class="header__box-info">
+                        <div class="header__box-title">Большой театр</div>
+                        <div class="header__box-text">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах,<br/> с 1886 года — Петербургская консерватория. Первое постоянное в<br/> Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных</br> зданий в Европе XVIII.</div>
+                        <div class="header__box-button">
+                            <button class="header__box-button-btn btn font-size-px18" onClick="document.getElementById('project').scrollIntoView()">афиша</button>
+                        </div>
+                    </div>
+                    <div class="header__box-slider">
+                        <div class="header__box-slider-display" id="header-slider-window">
+                            
+                        </div>
+                        <div class="header__box-slider-button">
+                            <div class="header__box-slider-button-prev" onClick="prevBtn()">
+                                <div class="header__box-slider-button-prev-text font-size-px18">Пред</div>
+                            </div>
+                            <div class="header__box-slider-button-next" onClick="nextBtn()">
+                                <div class="header__box-slider-button-next-text font-size-px18">след</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="container__about" id="about-theatre">
+            <div class="box">
+                <div class="title"><span class="title">о</span><span class="title"> театре</span></div>
+                <div class="container__about-info">
+                    <div class="container__about-info-bio">
+                        <div class="font-size-px21">Самый лучший театр СПБ</div>
+                        <div class="container__about-info-bio-text">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</div>
+                    </div>
+                    <div class="container__about-info-num">
+                        <div class="font-size-px21">немного о цифрах</div>
+                        <div class="container__about-info-num-armchair">
+                            <div class="container__about-info-num-armchair-icon"></div>
+                            <div class="container__about-info-num-armchair-text font-info-text"><span class="font-info-text">1600</span><span class="font-info-text"> посадочный мест</span></div>
+                        </div>
+                        <div class="container__about-info-num-theater">
+                            <div class="container__about-info-num-theater-icon"></div>
+                            <div class="container__about-info-num-theater-text font-info-text"><span class="font-info-text">350</span><span class="font-info-text"> лет истории</span></div>
+                        </div>
+                    </div>
+                    <div class="container__about-info-img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container__project" id="project">
+            <div class="container__project-title title"><span class="title">наши</span><span class="title"> постановки</span></div>
+            <div class="container__project-items" id="project-items-window">
+                
+            </div>
+        </div>
+        <div class="container__rating">
+            <div class="box">
+                <div class="container__rating-box">
+                    <div class="container__rating-box-date">
+                        <span>2018</span><span>2019</span><span>2020</span>
+                    </div>
+                    <div class="container__rating-box-text">Лучший театр </br >по мнению театральных </br> критиков Парижа</div>
+                </div>
+            </div>
+        </div>
+        <div class="container__partners" id="partners">
+            <div class="box">
+                <div class="title"><span class="title">партнеры</span><span class="title"> театра</span></div>
+                <div class="container__partners-box">
+                    <div class="container__partners-box-row1">
+                        <div class="container__partners-box-row1-img"></div>
+                        <div class="container__partners-box-row1-img"></div>
+                        <div class="container__partners-box-row1-img"></div>
+                        <div class="container__partners-box-row1-img"></div>
+                    </div>
+                    <div class="container__partners-box-row1">
+                        <div class="container__partners-box-row1-img"></div>
+                        <div class="container__partners-box-row1-img"></div>
+                        <div class="container__partners-box-row1-img"></div>
+                        <div class="container__partners-box-row1-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__contacts" id="contacts">
+            <div class="box__contacts">
+                <div class="title"><span class="title">стать</span><span class="title"> меценатом</span></div>
+                <div class="container__contacts-items">
+                    <div class="container__contacts-items-contact">
+                        <span class="container__contacts-items-contact-tel container__contacts-items-contact-col"><span>+7 (812) 123-45-55</span><span>+7 (812) 123-45-66</span></span>
+                        <span class="container__contacts-items-contact-mail container__contacts-items-contact-col"><span>info@theater.ru</span><span>г. санкт-петербург, невский 140</span></span>
+                    </div>
+                    <div class="container__contacts-items-mail">
+                        <form>
+                            <div class="container__contacts-items-mail-input">
+                                <div class="container__contacts-items-mail-input-info">
+                                    <input type="text" class="input-name input-info input delete-form" placeholder="Имя">
+                                    <input type="tel" class="input-tel input-info input delete-form" placeholder="Телефон">
+                                    <input type="text" class="input-company input-info input delete-form" placeholder="Компания">
+                                    <input type="text" class="input-mail input-info input delete-form" placeholder="E-mail">
+                                </div>
+                                <textarea name="" wrap="hard" id="" cols="35" rows="35" class="input-mail2 input-text-area input delete-form" placeholder="Сообщение "></textarea>
+                            </div>
+                            <div class="container__contacts-items-mail-info">
+                                <div class="container__contacts-items-mail-info-text">* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</div>
+                                <div class="container__contacts-items-mail-info-btn btn font-size-px18" onClick="document.querySelector('.delete-form').form.reset();">отправить</div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer__box">
+            <div class="footer__item">
+                <div class="footer__item-left">(с) Все права защищены. Большой театр. 2020</div>
+                <div class="footer__item-right">Разработано d-e-n.ru</div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/menu-block.js"></script>
+    <script src="./js/project.js"></script>
+</body>
+</html>
